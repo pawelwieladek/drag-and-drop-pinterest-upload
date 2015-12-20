@@ -1,0 +1,32 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $background-color;
+  font-family: $font-family;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: $background-color solid $border-size;
+  transition: all 0.2s;
+
+  &:hover {
+    border: $brand-color solid $border-size;
+  }
+}
+
+.box-content {
+  text-align: center;
+}
+
+.icon {
+  font-size: $icon-size;
+  color: $brand-color;
+}

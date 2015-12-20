@@ -7,7 +7,7 @@ import styles from './styles/styles.scss';
 export default class App extends Component {
     render() {
         return (
-            <div>
+            <div className="app">
                 <Box />
             </div>
         )
