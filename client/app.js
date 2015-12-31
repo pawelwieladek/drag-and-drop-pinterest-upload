@@ -1,15 +1,23 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContext } from 'react-dnd';
+import request from 'superagent';
 
 import Box from './box';
 
 import styles from './styles/styles.scss';
 
-export default class App extends Component {
+const App = React.createClass({
+    handleDrop(file) {
+        console.log(file);
+    },
     render() {
         return (
             <div className="app">
-                <Box />
+                <Box onDrop={this.handleDrop} />
             </div>
         )
     }
-}
+});
+
+export default DragDropContext(HTML5Backend)(App);

@@ -17,7 +17,7 @@ body {
   border: $background-color solid $border-size;
   transition: all 0.2s;
 
-  &:hover {
+  &.active {
     border: $brand-color solid $border-size;
   }
 }
